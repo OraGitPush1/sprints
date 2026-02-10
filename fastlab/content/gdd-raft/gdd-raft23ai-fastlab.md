@@ -1,4 +1,4 @@
-# Oracle Globally Distributed AI Database: Raft-base Replication FastLab
+# Oracle Globally Distributed AI Database: Raft-based Replication FastLab
 
 Welcome to this **LiveLabs FastLab** workshop.
 
@@ -6,21 +6,17 @@ LiveLabs FastLab workshops give you clear, step-by-step instructions to help you
 
 Estimated Time: 30 minutes
 
-# Introduction
+## Introduction
 
-## About Raft Replication
+Oracle Globally Distributed Database provides built-in fault tolerance with Raft-based replication, a capability that integrates data replication with transaction execution in a Distributed database. Raft-based replication enables fast automatic failover with zero data loss.
 
-Oracle Globally Distributed Database provides built-in fault tolerance with Raft replication, a capability that integrates data replication with transaction execution in a sharded database. Raft replication enables fast automatic failover with zero data loss.
-
-![Raft introduction](images/raft-intro.png " ")
-
-[Introduction and verify Lab environment](videohub:1_c5e1jhps)
+![Raft introduction](./images/raft-intro.png " ")
 
 ### Objectives
-In this workshop, you will gain first-hand experience in utilizing the Raft Replication within Oracle Globally Distributed Database.
+In this workshop, you will gain first-hand experience in utilizing the Raft-based Replication within Oracle Globally Distributed Database.
 
-- Testing the use-cases via Podman containers, RAFT UI Application.
-- Hands-on Lab for RAFT Topology via GDSCTL which is The command-line utility used to manage and configure Oracle Global Data Services (GDS).
+- Testing the use-cases via Podman containers, to show RAFT-based replications via a sample UI Application.
+- Hands-on Lab for RAFT Topology via GDSCTL. GDSCTL is the command-line utility used to manage and configure Oracle Global Data Services (GDS).
 - Exploring the dynamics of Raft.
 
 ### Prerequisites
@@ -37,8 +33,18 @@ This lab assumes you have:
 
 [Demo App for Raft Replication](videohub:1_147isows)
 
+## Task 1: Prepare setup to run in your Tenancy 
+Follow the Lab 1: Prepare Setup
+https://livelabs.oracle.com/ords/r/dbpm/livelabs/run-workshop?p210_wid=3772
 
-## Task 1: Confirm the Remote Desktop Environment
+
+## Task 2: Setup compute instance to run in your Tenancy
+Follow the "Lab 2: Environment Setup" for set up compute instance
+https://livelabs.oracle.com/ords/r/dbpm/livelabs/run-workshop?p210_wid=3772&p210_wec=&session=4401694445795
+
+Once setup is done, you can launch the instance from the URL as shown in Task 3: Access the Graphical Remote Desktop of above lab.
+
+## Task 3: Confirm the Remote Desktop Environment
 
 1. Launch your LiveLabs desktop session. By default, two browser windows open: the Introduction on the left and the **RAFT Replication LiveLabs Demo: All Customers List** app on the right.
 
@@ -56,7 +62,7 @@ This lab assumes you have:
 
 ## Task 2: Explore the Raft-based replication - Demo UI Application
 
-1. Focus the **RAFT-based Replication LiveLabs Demo: All Customers List** tab or navigate to `http://localhost:8080` if needed.
+1. Navigate to **RAFT-based Replication LiveLabs Demo: All Customers List** tab.
 
     ![Customers list](./images/all_customer_after_inital_workload.png " ")
 
