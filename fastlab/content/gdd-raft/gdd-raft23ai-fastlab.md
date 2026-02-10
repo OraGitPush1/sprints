@@ -1,21 +1,42 @@
-# Oracle Globally Distributed AI Database: Raft Replication FastLab
+# Oracle Globally Distributed AI Database: Raft-base Replication FastLab
 
 Welcome to this **LiveLabs FastLab** workshop.
 
-This FastLab guides you through a condensed, hands-on tour of Oracle Globally Distributed AI Database (GDD) Raft replication. You will validate the provided sandbox, experience the demo application, and observe automatic shard role transitions—all within minutes.
+LiveLabs FastLab workshops give you clear, step-by-step instructions to help you quickly gain hands-on experience with the Oracle AI Database. You will go from beginner to confident user in a short time.
 
 Estimated Time: 30 minutes
 
-## FastLab Introduction
+# Introduction
+
+## About Raft Replication
+
+Oracle Globally Distributed Database provides built-in fault tolerance with Raft replication, a capability that integrates data replication with transaction execution in a sharded database. Raft replication enables fast automatic failover with zero data loss.
+
+![Raft introduction](images/raft-intro.png " ")
+
+[Introduction and verify Lab environment](videohub:1_c5e1jhps)
+
+### Objectives
+In this workshop, you will gain first-hand experience in utilizing the Raft Replication within Oracle Globally Distributed Database.
+
+- Testing the use-cases via Podman containers, RAFT UI Application.
+- Hands-on Lab for RAFT Topology via GDSCTL which is The command-line utility used to manage and configure Oracle Global Data Services (GDS).
+- Exploring the dynamics of Raft.
 
 ### Prerequisites
-
+This lab assumes you have:
+- An Oracle Free Tier or Paid Cloud account
 - Oracle Cloud tenancy (Free Tier, Paid, or LiveLabs reservation)
 - Provisioned Raft replication sandbox from the companion workshop stack
+- Watch the video for a quick walk through of the Prepare Setup lab.
+
+[Prepare Lab Setup](youtube:DTIGmlj7Y3I)
+
 
 ### Video Walkthrough
 
-[Raft FastLab Walkthrough](videohub:1_c5e1jhps)
+[Demo App for Raft Replication](videohub:1_147isows)
+
 
 ## Task 1: Confirm the Remote Desktop Environment
 
@@ -59,6 +80,12 @@ Estimated Time: 30 minutes
 
 5. When you are ready, start the shard again with the matching **Start Shard** control to restore full capacity.
 
+## Conclusion
+
+***Congratulations***, you have successfully completed the FastLab on working with the Oracle Globally Distributed AI Database: Raft-base Replication! In this lab, you discovered how to connect demo UI application for Raft-base replication, browse it contents, shutdown a shard database and still see application working since another shard is service the data for the same Replicaion Units.  With these skills, you’ve built the foundation that how to use Raft-based Replication with Oracle Globally Distributed AI Database for Resilient Never Down Apps.
+
+With these skills, you can now help the team replicate new data faster in backgroud while Application data being served from Oracle Globally Distributed AI Database. Visit our Signature Workshop to see more complex examples and learn even more skills.
+
 ## Signature Workshop
 
 Ready to explore the complete environment build-out? Continue with the full workshop here: [Use Raft Replication with Distributed Database for Resilient Never Down Apps](https://livelabs.oracle.com/pls/apex/f?p=133:180:::::wid:3772).
@@ -71,4 +98,4 @@ Ready to explore the complete environment build-out? Continue with the full work
 ## Acknowledgements
 - **Authors** – Ajay Joshi, Oracle Globally Distributed AI Database Product Management
 - **Contributors** – Edgard Ambler, Shefali Bhargava, Carmen Berdant 
-- **Last Updated By/Date** – Ajay Joshi, Oracle Globally Distributed AI Database Product Management, January 2026
+- **Last Updated By/Date** – Ajay Joshi, Oracle Globally Distributed AI Database Product Management, February 2026
