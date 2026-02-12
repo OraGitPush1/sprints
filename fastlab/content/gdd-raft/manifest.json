@@ -2,8 +2,8 @@
   "workshoptitle": "LiveLabs FastLab - Raft Replication Quick Tour",
   "help": "livelabs-help-database_us@oracle.com",
   "include": { 
-    "prepare-setup.md":"https://oracle-livelabs.github.io/database/sharding/raft23ai/prepare-setup/prepare-setup.md",
-    "setup-compute-novnc.md":"https://oracle-livelabs.github.io/common/labs/setup-compute-generic/setup-compute-novnc.md"
+    "prepare-setup.md": "/database/sharding/raft23ai/prepare-setup/prepare-setup.md",
+    "setup-compute-novnc.md": "/common/labs/setup-compute-generic/setup-compute-novnc.md"
   },
   "tutorials": [
     {
