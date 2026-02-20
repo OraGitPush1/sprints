@@ -28,13 +28,8 @@ This lab assumes you have:
 
 [Demo App for Raft Replication](videohub:1_147isows)
 
-## Task1: 
 
-[](include:prepare-setup.md)
-
-[](include:setup-compute-novnc.md)
-
-## Task 2: Confirm the Remote Desktop Environment
+## Task 1: Confirm the Remote Desktop Environment
 
 1. Launch your LiveLabs desktop session. By default, two browser windows open: the Introduction on the left and the **RAFT Replication LiveLabs Demo: All Customers List** app on the right.
 
@@ -44,7 +39,7 @@ This lab assumes you have:
 
 ![<all_customer_after_inital_workload>](./images/task2-scrn-2.png " ")
 
-## Task 3: Observe Automatic Shard Failover
+## Task 2: Observe Automatic Shard Failover
 
 1. Navigate to "All Customers List" page show on the right window and from any customer row, open **More Details** in a new tab to inspect the current shard leader and replication unit for that record. To open **More Details** in a new tab, right click on the "More Details" link and click "Open link in new tab", it will open a page titled with "RAFT 23ai LiveLabs Demo: More Details".
 
@@ -70,7 +65,7 @@ This lab assumes you have:
     You can observe that the leadership has automatically moved to another shard, indicating re-routing of the request and switchover of RU to another shard is completed.
 
 
-## Task 4: Startup the previously shutdown shard
+## Task 3: Startup the previously shutdown shard
 
 1. As you verified that application kept running while one of the shard was down, now bring that shard back.
    For example, since shard2 was shutdown in a previous Task 1's step 3 earlier, now to bring it back, click the "Start Shard2" link.
